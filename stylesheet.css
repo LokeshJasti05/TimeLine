@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #2e364a;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.text-box{
+    padding: 20px 30px;
+    background: #9D9D9C;
+    border-radius: 20px;
+}
+
+.text-with-gradient {
+    background-image: linear-gradient(to right, blue, purple);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 4px;
+  }
+
+.left-container{
+    left:0;
+}
+.right-container{
+    left:50%;
+}
+
+.container img{
+    position: absolute;
+    width: 30px;
+    border-radius: 50px;
+    right: -16px;
+    top:32px;
+    z-index: 10;
+
+}
+
+.right-container img{
+    position: absolute;
+    width: 30px;
+    border-radius: 50px;
+    left: -16px;
+    top:32px;
+    z-index: 10;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top:0;
+    left:50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid red;
+    right: -15px;
+}
